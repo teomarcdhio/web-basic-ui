@@ -1,15 +1,117 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Base web UI</title>
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <script src="js/jquery-3.1.1"></script>
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-    </head>
-    <body>
-      <p>
-        Some basic seed based on UiKit
-      </p>
-    </body>
+<html calss="uk-height-1-1" lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Base layer</title>
+  <link rel="stylesheet" href="css/uikit.css" />
+  <link rel="stylesheet" href="css/components/accordion.css" />
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/core/nav.js"></script>
+  <script src="js/core/dropdown.js"></script>
+</head>
+<body class="uk-height-1-1">
+
+  <nav class="uk-navbar ">
+      <a href="" class="uk-navbar-brand ">Jayex</a>
+      <ul class="uk-navbar-nav">
+        <li class="uk-parent" data-uk-dropdown>
+          <a href=""><i class="uk-icon-folder-open"></i> Media</a>
+
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <ul class="uk-nav uk-nav-navbar">
+              <li><a href=""><i class="uk-icon-picture-o"></i> Images</a></li>
+              <li><a href=""><i class="uk-icon-film"></i> Videos</a></li>
+              <li><a href=""><i class="uk-icon-object-group"></i> Scenes</a></li>
+              <li><a href=""><i class="uk-icon-cloud-upload"></i> MyMedia</a></li>
+            </ul>
+          </div>
+
+        </li>
+      <li><a href=""><i class="uk-icon-reorder"></i> Playlist</a></li>
+
+      <li><a href=""><i class="uk-icon-gears"></i> Settings</a></li>
+      <li><a href=""><i class="uk-icon-bar-chart"></i> Reports</a></li>
+      <li><a href=""><i class="uk-icon-phone"></i> Support</a></li>
+      </ul>
+
+      <div class="uk-navbar-flip">
+          <ul class="uk-navbar-nav">
+              <li><a href=""><i class="uk-icon-bell-o"></i> Alerts</a></li>
+              <li><a href=""><i class="uk-icon-user"></i> Matteo</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+
+
+<div class="uk-grid" >
+  <div class="uk-width-1-1">
+     <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+      <h3 class="uk-panel-title uk-text-center">Dashboard</h3>
+
+        <div class="uk-panel uk-panel-box">
+         <h3 class="uk-panel-title"><i class="uk-icon-home"></i> Instance overview</h3>
+         <table class="uk-table  ">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>License status</th>
+                        <th>Players available</th>
+                        <th>Admin user</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jayex test instance</td>
+                        <td>Expires in 265 days </td>
+                        <td>2</td>
+                        <td>Matteo Marcolini</td>
+                    </tr>
+                </tbody>
+            </table>
+       </div>
+
+<br/>
+
+       <div class="uk-panel uk-panel-box">
+        <h3 class="uk-panel-title"><i class="uk-icon-television"></i> Players activity</h3>
+        <table class="uk-table uk-table-hover ">
+               <thead>
+                   <tr>
+                       <th>Player name</th>
+                       <th>Status  </th>
+                       <th>Current playlist</th>
+                       <th></th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Player one </td>
+                       <td>Running</td>
+                       <td>Winter playlist</td>
+                       <td><a class="uk-button uk-button-primary" href="#">Edit</a></td>
+                   </tr>
+                   <tr>
+                       <td>Player two</td>
+                       <td>Running</td>
+                       <td>Matteo's personal playlist</td>
+                       <td><a class="uk-button uk-button-primary" href="#">Edit</a></td>
+                   </tr>
+               </tbody>
+           </table>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
 </html>
